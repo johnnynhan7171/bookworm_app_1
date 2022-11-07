@@ -4,7 +4,7 @@
 }
 
 .shop__listproduct__sorting{
-    
+
     display: flex !important;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -12,17 +12,15 @@
 
 .shop__listproduct__sorting__dropdown{
     background-color: #290b29;
-    color: yellow;
+    color: #000;
     display: flex !important;
     justify-content: flex-end;
-
     .shop__listproduct__sorting__dropdown__sorting{
         margin-right: 6px;
     }
-
     button {
         background-color: #290b29;
-        color: yellow;
+        color: #fff;
         font-size: 1rem;
         font-weight: 600;
         padding: 0.5rem 1rem;
@@ -31,18 +29,15 @@
         cursor: pointer;
         transition: all 0.15s ease-in-out;
         border: 1px solid #290b29;
-
         &:hover {
-            background-color: yellow;
+            background-color: #fff;
             color: #290b29;
             border: 1px solid #290b29;
         }
-
         &::backdrop {
             background-color: #290b29;
         }
     }
-
     a {
         &:hover {
             color: #fff;

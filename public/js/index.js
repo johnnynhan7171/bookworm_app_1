@@ -13560,24 +13560,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/Footer/style.scss");
-/* harmony import */ var _assets__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../assets */ "./resources/assets/index.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 function Footer() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     className: "bookworm__footer",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "bookworm__footer__text",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
-        children: "Bookworm | Shop Book"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h5", {
-        children: "Address: 20 Giang C\u1EF1 V\u1ECDng, ph\u01B0\u1EDDng Trung M\u1EF9 T\xE2y, qu\u1EADn 12, TP.H\u1ED3 Ch\xED Minh"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h5", {
-        children: "Phone: 0986746450"
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+        children: "BookWorm Store"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+        children: "Address: 364 Cong Hoa Street, Tan Binh District, Ho Chi Minh City"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h5", {
+        children: "Phone: +84 28 3810 6200"
       })]
     })
   });
@@ -13640,13 +13638,13 @@ function Header() {
     setIsLogin = _useState2[1];
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(''),
     _useState4 = _slicedToArray(_useState3, 2),
-    fullname = _useState4[0],
-    setFullname = _useState4[1];
+    fullName = _useState4[0],
+    setFullName = _useState4[1];
   (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
     var userLogin = JSON.parse(localStorage.getItem('userLogin'));
     if (userLogin) {
       setIsLogin(true);
-      setFullname(userLogin.first_name + ' ' + userLogin.last_name);
+      setFullName(userLogin.first_name + ' ' + userLogin.last_name);
     }
   }, []);
   var handleLogout = function handleLogout() {
@@ -13667,7 +13665,7 @@ function Header() {
                   localStorage.removeItem('token');
                   localStorage.removeItem('isLogin');
                   setIsLogin(false);
-                  setFullname('');
+                  setFullName('');
                   navigate('/');
                 }
                 _context.next = 10;
@@ -13704,7 +13702,7 @@ function Header() {
             className: "bookworm__logo__header",
             src: _assets__WEBPACK_IMPORTED_MODULE_4__["default"].logo
           }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-            children: "BOOKWORM"
+            children: "BookWorm Store"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Toggle, {
           "aria-controls": "responsive-navbar-nav"
@@ -13743,7 +13741,7 @@ function Header() {
               children: ["Cart (", noOfCart, ")"]
             }), isLogin ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["default"], {
-                title: fullname,
+                title: fullName,
                 id: "collasible-nav-dropdown",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["default"].Item, {
                   onClick: function onClick() {
@@ -17287,7 +17285,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".card__custom {\n  width: 15rem;\n  height: 30rem !important;\n  margin-bottom: 16px;\n  cursor: pointer;\n}\n.card__custom .card__custom__img {\n  height: 300px !important;\n}\n.card__custom .card__custom__title {\n  color: #290b29;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.card__custom:hover {\n  background-color: #290b29;\n  border: 1px solid yellow;\n}\n.card__custom:hover .card__custom__title {\n  color: yellow;\n}\n.card__custom:hover .card__price {\n  color: yellow;\n}\n.card__custom:hover .card__custom__price {\n  color: yellow;\n}\n\n.card__price__discount .card__price--final {\n  font-size: 1.3rem;\n  font-weight: 700;\n}\n.card__price__discount .card__price--original {\n  font-size: 1rem;\n  font-weight: 300;\n  text-decoration: line-through;\n  margin-right: 4px;\n}\n\n.card__price .card__price--final {\n  font-size: 1rem;\n  font-weight: 400;\n  margin-right: 4px;\n}\n\n.card__custom__price {\n  height: 3rem;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".card__custom {\n  width: 15rem;\n  height: 30rem !important;\n  margin-bottom: 16px;\n  cursor: pointer;\n}\n.card__custom .card__custom__img {\n  height: 300px !important;\n}\n.card__custom .card__custom__title {\n  color: #290b29;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.card__custom:hover {\n  background-color: #290b29;\n  border: 1px solid #fff;\n}\n.card__custom:hover .card__custom__title {\n  color: #fff;\n}\n.card__custom:hover .card__price {\n  color: #fff;\n}\n.card__custom:hover .card__custom__price {\n  color: #fff;\n}\n\n.card__price__discount .card__price--final {\n  font-size: 1.3rem;\n  font-weight: 700;\n}\n.card__price__discount .card__price--original {\n  font-size: 1rem;\n  font-weight: 300;\n  text-decoration: line-through;\n  margin-right: 4px;\n}\n\n.card__price .card__price--final {\n  font-size: 1rem;\n  font-weight: 400;\n  margin-right: 4px;\n}\n\n.card__custom__price {\n  height: 3rem;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17311,7 +17309,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__footer {\n  background-color: #290b29;\n  color: yellow;\n  padding: 15px 25px;\n  margin-bottom: 0;\n  width: 100%;\n}\n.bookworm__footer h1 {\n  font-weight: 200;\n  font-size: 20px;\n}\n.bookworm__footer h5 {\n  font-size: 16px;\n  font-weight: 100;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__footer {\n  background-color: #290b29;\n  color: #fff;\n  padding: 15px 25px;\n  margin-bottom: 0;\n  width: 100%;\n}\n.bookworm__footer h1 {\n  font-weight: 200;\n  font-size: 20px;\n}\n.bookworm__footer h5 {\n  font-size: 16px;\n  font-weight: 100;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17431,7 +17429,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__cart_total {\n  text-align: center;\n}\n.bookworm__cart_total h1 {\n  font-size: 2.5rem;\n  font-weight: 700;\n  margin-bottom: 1.2rem;\n}\n.bookworm__cart_total button {\n  background-color: #290b29;\n  color: yellow;\n  font-size: 1.5rem;\n  font-weight: 700;\n  padding: 1rem 2rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid #000;\n}\n.bookworm__cart_total button:hover {\n  background-color: yellow;\n  color: #290b29;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__cart_total {\n  text-align: center;\n}\n.bookworm__cart_total h1 {\n  font-size: 2.5rem;\n  font-weight: 700;\n  margin-bottom: 1.2rem;\n}\n.bookworm__cart_total button {\n  background-color: #290b29;\n  color: #fff;\n  font-size: 1.5rem;\n  font-weight: 700;\n  padding: 1rem 2rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid #000;\n}\n.bookworm__cart_total button:hover {\n  background-color: #fff;\n  color: #290b29;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17455,7 +17453,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__cart {\n  margin-top: 80px;\n}\n.bookworm__cart .bookworm__cart__content .bookworm__cart__image {\n  width: 100px;\n  height: 150px;\n  margin-right: 20px;\n}\n.bookworm__cart .bookworm__cart__price__discount {\n  text-decoration: line-through;\n  color: gray;\n  font-size: 16px;\n}\n.bookworm__cart .bookworm__cart__price__final {\n  font-weight: 600;\n  font-size: 26px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__cart {\n  margin-top: 80px;\n}\n.bookworm__cart .bookworm__cart__content .bookworm__cart__image {\n  width: 100px;\n  height: 150px;\n  margin-right: 20px;\n}\n.bookworm__cart .bookworm__cart__price__discount {\n  text-decoration: line-through;\n  color: #808080;\n  font-size: 16px;\n}\n.bookworm__cart .bookworm__cart__price__final {\n  font-weight: 600;\n  font-size: 26px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17503,7 +17501,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__detail__card__price__finalprice {\n  font-size: 1.5rem;\n  font-weight: 600;\n  color: #000;\n  margin-left: 5px;\n}\n\n.bookworm__detail__card__price__bookprice {\n  text-decoration: line-through;\n  color: #999;\n}\n\n.bookworm__detail__card__price {\n  display: flex;\n  align-items: center;\n}\n\n.bookworm__detail__card__body__quantity {\n  display: flex;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.bookworm__detail__card__body__quantity {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  background-color: #290b29;\n  color: yellow;\n}\n.bookworm__detail__card__body__quantity span {\n  cursor: pointer;\n  font-size: 28px;\n  border-radius: 15px;\n}\n.bookworm__detail__card__body__quantity button {\n  height: 42px;\n  width: 42px;\n  border: none;\n  color: #290b29;\n}\n\n.bookworm__detail__card__body__addtocart {\n  margin-top: 30px;\n}\n.bookworm__detail__card__body__addtocart button {\n  width: 100%;\n  height: 42px;\n  border: none;\n  background-color: #290b29;\n  color: yellow;\n  font-size: 1.2rem;\n  font-weight: 600;\n  cursor: pointer;\n}\n.bookworm__detail__card__body__addtocart button:hover {\n  background-color: #999;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__detail__card__price__finalprice {\n  font-size: 1.5rem;\n  font-weight: 600;\n  color: #000;\n  margin-left: 5px;\n}\n\n.bookworm__detail__card__price__bookprice {\n  text-decoration: line-through;\n  color: #999;\n}\n\n.bookworm__detail__card__price {\n  display: flex;\n  align-items: center;\n}\n\n.bookworm__detail__card__body__quantity {\n  display: flex;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.bookworm__detail__card__body__quantity {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  background-color: #290b29;\n  color: #fff;\n}\n.bookworm__detail__card__body__quantity span {\n  cursor: pointer;\n  font-size: 28px;\n  border-radius: 15px;\n}\n.bookworm__detail__card__body__quantity button {\n  height: 42px;\n  width: 42px;\n  border: none;\n  color: #290b29;\n}\n\n.bookworm__detail__card__body__addtocart {\n  margin-top: 30px;\n}\n.bookworm__detail__card__body__addtocart button {\n  width: 100%;\n  height: 42px;\n  border: none;\n  background-color: #290b29;\n  color: #fff;\n  font-size: 1.2rem;\n  font-weight: 600;\n  cursor: pointer;\n}\n.bookworm__detail__card__body__addtocart button:hover {\n  background-color: #999;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17551,7 +17549,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__detail__card__body__addtocart {\n  background-color: #290b29;\n  color: yellow;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__detail__card__body__addtocart {\n  background-color: #290b29;\n  color: #fff;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17599,7 +17597,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__featured {\n  margin-top: 24px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.bookworm__featured h1 {\n  margin: auto;\n  font-size: 28px;\n}\n.bookworm__featured__tabs {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.bookworm__featured__tabs button {\n  background-color: #290b29;\n  color: yellow;\n  font-size: 1.5rem;\n  font-weight: 700;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n}\n.bookworm__featured__tabs button:hover {\n  background-color: yellow;\n  color: black;\n  border: 1px solid black;\n}\n.bookworm__featured__tabs .bookworm__featured__tab--active {\n  background-color: #290b29;\n  color: yellow;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__featured {\n  margin-top: 24px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.bookworm__featured h1 {\n  margin: auto;\n  font-size: 28px;\n}\n.bookworm__featured__tabs {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.bookworm__featured__tabs button {\n  background-color: #290b29;\n  color: #fff;\n  font-size: 1.5rem;\n  font-weight: 700;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n}\n.bookworm__featured__tabs button:hover {\n  background-color: #fff;\n  color: black;\n  border: 1px solid black;\n}\n.bookworm__featured__tabs .bookworm__featured__tab--active {\n  background-color: #290b29;\n  color: #fff;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17623,7 +17621,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__onsale {\n  padding: 0px;\n}\n.bookworm__onsale .bookworm__onsale__title {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n.bookworm__onsale .bookworm__onsale_button button {\n  background-color: #290b29;\n  color: yellow;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid yellow;\n}\n.bookworm__onsale .bookworm__onsale_button button:hover {\n  background-color: yellow;\n  color: #000;\n  border: 1px solid black;\n}\n\n.carousel {\n  background-color: #290b29;\n  box-shadow: yellow;\n  padding: 30px 30px;\n  width: 100%;\n}\n\n.carousel__books .react-multi-carousel-item {\n  background-color: #290b29;\n  box-shadow: yellow;\n  display: flex;\n  justify-content: center;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".bookworm__onsale {\n  padding: 0px;\n}\n.bookworm__onsale .bookworm__onsale__title {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n.bookworm__onsale .bookworm__onsale_button button {\n  background-color: #290b29;\n  color: #fff;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid #fff;\n}\n.bookworm__onsale .bookworm__onsale_button button:hover {\n  background-color: #fff;\n  color: #000;\n  border: 1px solid black;\n}\n\n.carousel {\n  background-color: #290b29;\n  box-shadow: #fff;\n  padding: 30px 30px;\n  width: 100%;\n}\n\n.carousel__books .react-multi-carousel-item {\n  background-color: #290b29;\n  box-shadow: #fff;\n  display: flex;\n  justify-content: center;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17647,7 +17645,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".home {\n  margin-top: 100px;\n}\n.home .card__custom {\n  background-color: yellow;\n  color: #290b29;\n  width: 20rem;\n  height: 40rem !important;\n}\n.home .card__custom .card__custom__img {\n  height: 350px !important;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".home {\n  margin-top: 100px;\n}\n.home .card__custom {\n  background-color: #fff;\n  color: #290b29;\n  width: 20rem;\n  height: 40rem !important;\n}\n.home .card__custom .card__custom__img {\n  height: 350px !important;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17671,7 +17669,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".shop__filtermenu {\n  margin-bottom: 4px;\n}\n.shop__filtermenu .shop__filtermenu__body {\n  cursor: pointer;\n}\n.shop__filtermenu .shop__filtermenu__body:hover {\n  background-color: yellow;\n}\n.shop__filtermenu .shop__filtermenu__body--active {\n  background-color: #290b29;\n  color: yellow;\n  cursor: pointer;\n}\n\n.shop__filtermenu__header .accordion-button:focus {\n  background-color: #290b29;\n  color: yellow;\n  border-color: #290b29;\n}\n.shop__filtermenu__header .accordion-button:not(.collapsed) {\n  color: yellow;\n  background-color: #290b29;\n  border-color: yellow;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".shop__filtermenu {\n  margin-bottom: 4px;\n}\n.shop__filtermenu .shop__filtermenu__body {\n  cursor: pointer;\n}\n.shop__filtermenu .shop__filtermenu__body:hover {\n  background-color: #fff;\n}\n.shop__filtermenu .shop__filtermenu__body--active {\n  background-color: #290b29;\n  color: #fff;\n  cursor: pointer;\n}\n\n.shop__filtermenu__header .accordion-button:focus {\n  background-color: #290b29;\n  color: #fff;\n  border-color: #290b29;\n}\n.shop__filtermenu__header .accordion-button:not(.collapsed) {\n  color: #fff;\n  background-color: #290b29;\n  border-color: #fff;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17695,7 +17693,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".shop__listproduct__pagination {\n  display: flex;\n  justify-content: center;\n}\n.shop__listproduct__pagination .page-link {\n  color: #000;\n  background-color: #f5f5f5;\n}\n.shop__listproduct__pagination .page-link:active {\n  background-color: #000;\n  color: #fff;\n}\n.shop__listproduct__pagination .page-link.active, .shop__listproduct__pagination .active > .page-link {\n  background-color: #290b29;\n  color: yellow;\n  border-color: #290b29;\n}\n.shop__listproduct__pagination .page-link:hover {\n  background-color: yellow;\n  color: #290b29;\n  border: #290b29;\n}\n\n.loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".shop__listproduct__pagination {\n  display: flex;\n  justify-content: center;\n}\n.shop__listproduct__pagination .page-link {\n  color: #000;\n  background-color: #f5f5f5;\n}\n.shop__listproduct__pagination .page-link:active {\n  background-color: #000;\n  color: #fff;\n}\n.shop__listproduct__pagination .page-link.active, .shop__listproduct__pagination .active > .page-link {\n  background-color: #290b29;\n  color: #fff;\n  border-color: #290b29;\n}\n.shop__listproduct__pagination .page-link:hover {\n  background-color: #fff;\n  color: #290b29;\n  border: #290b29;\n}\n\n.loading {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17719,7 +17717,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".shop__listproduct {\n  margin: 0 auto;\n}\n\n.shop__listproduct__sorting {\n  display: flex !important;\n  justify-content: space-between;\n  margin-bottom: 20px;\n}\n\n.shop__listproduct__sorting__dropdown {\n  display: flex !important;\n  justify-content: flex-end;\n}\n.shop__listproduct__sorting__dropdown .shop__listproduct__sorting__dropdown__sorting {\n  margin-right: 6px;\n}\n.shop__listproduct__sorting__dropdown button {\n  background-color: #290b29;\n  color: yellow;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid #000;\n}\n.shop__listproduct__sorting__dropdown button:hover {\n  background-color: yellow;\n  color: #290b29;\n  border: 1px solid #290b29;\n}\n.shop__listproduct__sorting__dropdown button::backdrop {\n  background-color: #290b29;\n}\n.shop__listproduct__sorting__dropdown a:hover {\n  color: #fff;\n  background-color: #000;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".shop__listproduct {\n  margin: 0 auto;\n}\n\n.shop__listproduct__sorting {\n  display: flex !important;\n  justify-content: space-between;\n  margin-bottom: 20px;\n}\n\n.shop__listproduct__sorting__dropdown {\n  display: flex !important;\n  justify-content: flex-end;\n}\n.shop__listproduct__sorting__dropdown .shop__listproduct__sorting__dropdown__sorting {\n  margin-right: 6px;\n}\n.shop__listproduct__sorting__dropdown button {\n  background-color: #290b29;\n  color: #fff;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid #000;\n}\n.shop__listproduct__sorting__dropdown button:hover {\n  background-color: #fff;\n  color: #290b29;\n  border: 1px solid #290b29;\n}\n.shop__listproduct__sorting__dropdown button::backdrop {\n  background-color: #290b29;\n}\n.shop__listproduct__sorting__dropdown a:hover {\n  color: #fff;\n  background-color: #000;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -17743,7 +17741,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".shop__listproduct {\n  margin: 0 auto;\n}\n\n.shop__listproduct__sorting {\n  display: flex !important;\n  justify-content: space-between;\n  margin-bottom: 20px;\n}\n\n.shop__listproduct__sorting__dropdown {\n  background-color: #290b29;\n  color: yellow;\n  display: flex !important;\n  justify-content: flex-end;\n}\n.shop__listproduct__sorting__dropdown .shop__listproduct__sorting__dropdown__sorting {\n  margin-right: 6px;\n}\n.shop__listproduct__sorting__dropdown button {\n  background-color: #290b29;\n  color: yellow;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid #290b29;\n}\n.shop__listproduct__sorting__dropdown button:hover {\n  background-color: yellow;\n  color: #290b29;\n  border: 1px solid #290b29;\n}\n.shop__listproduct__sorting__dropdown button::backdrop {\n  background-color: #290b29;\n}\n.shop__listproduct__sorting__dropdown a:hover {\n  color: #fff;\n  background-color: #000;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".shop__listproduct {\n  margin: 0 auto;\n}\n\n.shop__listproduct__sorting {\n  display: flex !important;\n  justify-content: space-between;\n  margin-bottom: 20px;\n}\n\n.shop__listproduct__sorting__dropdown {\n  background-color: #290b29;\n  color: #000;\n  display: flex !important;\n  justify-content: flex-end;\n}\n.shop__listproduct__sorting__dropdown .shop__listproduct__sorting__dropdown__sorting {\n  margin-right: 6px;\n}\n.shop__listproduct__sorting__dropdown button {\n  background-color: #290b29;\n  color: #fff;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  border: none;\n  border-radius: 0.5rem;\n  cursor: pointer;\n  transition: all 0.15s ease-in-out;\n  border: 1px solid #290b29;\n}\n.shop__listproduct__sorting__dropdown button:hover {\n  background-color: #fff;\n  color: #290b29;\n  border: 1px solid #290b29;\n}\n.shop__listproduct__sorting__dropdown button::backdrop {\n  background-color: #290b29;\n}\n.shop__listproduct__sorting__dropdown a:hover {\n  color: #fff;\n  background-color: #000;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

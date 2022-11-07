@@ -10,13 +10,13 @@ import "./style.scss"
 function Header() {
     const noOfCart = useSelector(state => state.cartReducer.cart).length || 0;
     const [isLogin, setIsLogin] = useState(false);
-    const [fullname, setFullname] = useState('');
+    const [fullName, setFullName] = useState('');
 
     useEffect(() => {
         const userLogin = JSON.parse(localStorage.getItem('userLogin'));
         if(userLogin){
             setIsLogin(true);
-            setFullname(userLogin.first_name + ' ' + userLogin.last_name);
+            setFullName(userLogin.first_name + ' ' + userLogin.last_name);
         }
     }, []);
 
@@ -29,7 +29,7 @@ function Header() {
                     localStorage.removeItem('token');
                     localStorage.removeItem('isLogin');
                     setIsLogin(false);
-                    setFullname('');
+                    setFullName('');
                     navigate('/');
                 }
             } catch (error) {
@@ -43,7 +43,7 @@ function Header() {
         <header>
             <Navbar collapseOnSelect expand="lg" bg="warning" variant="black" >
                 <Container fluid>
-                    <Navbar.Brand href="/" className='bookworm__logo'><img className='bookworm__logo__header' src={IMAGE['logo']} /> <span>BOOKWORM</span></Navbar.Brand>
+                    <Navbar.Brand href="/" className='bookworm__logo'><img className='bookworm__logo__header' src={IMAGE['logo']} /> <span>BookWorm Store</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto"></Nav>
@@ -55,7 +55,7 @@ function Header() {
                             {
                                 isLogin ?
                                 <>
-                                    <NavDropdown title={fullname} id="collasible-nav-dropdown">
+                                    <NavDropdown title={fullName} id="collasible-nav-dropdown">
                                         <NavDropdown.Item onClick={() => handleLogout()}>Logout</NavDropdown.Item>
                                     </NavDropdown>
                                 </>

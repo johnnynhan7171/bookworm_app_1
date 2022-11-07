@@ -1,37 +1,27 @@
 .shop__filtermenu{
     margin-bottom: 4px;
-
     .shop__filtermenu__body{
-
-        
         cursor: pointer;
-        
         &:hover{
-            background-color: yellow;
+            background-color: #fff;
         }
     }
-
     .shop__filtermenu__body--active {
         background-color: #290b29;
-        color: yellow;
+        color: #fff;
         cursor: pointer;
     }
-    
-
-    
 }
 
 .shop__filtermenu__header {
-
     .accordion-button:focus {
         background-color: #290b29;
-        color: yellow;
+        color: #fff;
         border-color: #290b29;
     }
-
     .accordion-button:not(.collapsed) {
-        color: yellow;
+        color: #fff;
         background-color: #290b29;
-        border-color: yellow;
+        border-color: #fff;
     }
 }
