@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.bookworm__logo__header {
+    width: 32px;
+    margin-right: 4px;
+}
+
+.bookworm__logo {
+    display: flex;
+    justify-content: center;
+
+    span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+}

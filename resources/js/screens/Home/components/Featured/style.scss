@@ -1,0 +1,42 @@
+.bookworm__featured{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        margin: auto;
+        font-size: 28px;
+    }
+
+    &__tabs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        button {
+            background-color: #290b29;
+            color: yellow;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+    
+            &:hover {
+                background-color: yellow;
+                color: black;
+                border: 1px solid black;
+            }
+        }
+
+        .bookworm__featured__tab--active{
+            background-color: #290b29;
+            color: yellow;
+            
+        }
+
+    }
+}

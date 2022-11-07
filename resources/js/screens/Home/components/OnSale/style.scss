@@ -1,0 +1,46 @@
+.bookworm__onsale {
+    padding: 0px;
+    .bookworm__onsale__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bookworm__onsale_button{
+        
+        button {
+            background-color: #290b29;
+            color: yellow;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            border: 1px solid yellow;
+    
+            &:hover {
+                background-color: yellow;
+                color: #000;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.carousel {
+    background-color: #290b29;
+    box-shadow: yellow;
+    padding: 30px 30px;
+    width: 100%;
+}
+
+.carousel__books{
+    .react-multi-carousel-item {
+        background-color: #290b29;
+        box-shadow: yellow;
+        display: flex;
+        justify-content: center;
+    }
+}
