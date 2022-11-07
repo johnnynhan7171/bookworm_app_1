@@ -12,7 +12,6 @@ function Shop(){
     const [sortBy, setSortBy] = useState("sale");
     const [noItems, setNoItems] = useState(15);
     const [page, setPage] = useState(1);
-
     const [paginate, setPaginate] = useState({
         current_page: 1,
         last_page: 1,
@@ -20,7 +19,6 @@ function Shop(){
         to: 1,
         total_items: 1
     });
-
     const [params, setParams] = useState({
         category: category.id,
         author: author.id,
@@ -85,16 +83,16 @@ function Shop(){
             <Row>
                 <Col xs={12} md={3}>
                     <FilterBar params={params}
-                               setCategory={setCategory}
-                               setAuthor={setAuthor}
-                               setRating={setRating}/>
+                            setCategory={setCategory}
+                            setAuthor={setAuthor}
+                            setRating={setRating}/>
                 </Col>
                 <Col xs={12} md={9}>
-                    <ListProducts params={params} 
-                                  setPage={setPage} 
-                                  setSortBy={setSortBy}
-                                  setNoItems={setNoItems}
-                                  paginate={paginate} setPaginate={setPaginate}/>
+                    <ListProducts params={params}
+                                setPage={setPage}
+                                setSortBy={setSortBy}
+                                setNoItems={setNoItems}
+                                paginate={paginate} setPaginate={setPaginate}/>
                 </Col>
             </Row>
         </Container>

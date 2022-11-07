@@ -94,7 +94,7 @@ function BookReview({ id }) {
                 }
                 setRating(data);
             } catch (error) {
-                // 
+                //
             }
         };
         fetchRating();
@@ -143,7 +143,6 @@ function BookReview({ id }) {
                                                 <span>(Filter by {filterParams.rating} star)</span>
                                             ) : null
                                         }
-                                        
                                     </div>
                                     <Row className="bookworm__reviews__statistics">
                                         <Col xs={12} md={2} lg={1}>
@@ -198,9 +197,8 @@ function BookReview({ id }) {
                                             </div>
                                         );
                                     })}
-
                                     <div className="bookworm__reviews__pagination">
-                                        <ReactPaginate 
+                                        <ReactPaginate
                                             previousLabel={'Previous'}
                                             nextLabel={'Next'}
                                             breakLabel={'...'}
@@ -225,14 +223,13 @@ function BookReview({ id }) {
                             </Card>
                         )
                     }
-
                 </Col>
                 <Col xs={12} md={4} lg={4} className="bookworm__detail__colitem">
                     <ReviewForm id={id}/>
                 </Col>
             </Row>
         </React.Fragment>
-    ); 
+    );
 }
 
 export default BookReview;

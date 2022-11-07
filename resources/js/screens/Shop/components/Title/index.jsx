@@ -1,6 +1,5 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import { useSelector } from 'react-redux';
 import { StringUtils } from "../../../../utils";
 import "./style.scss"
 function TitleShop({ params }) {

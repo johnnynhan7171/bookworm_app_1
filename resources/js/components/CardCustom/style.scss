@@ -6,15 +6,12 @@
     .card__custom__img{
         height: 300px !important;
     }
-
     .card__custom__title{
         color: #290b29;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-
     }
-
     &:hover{
         background-color: #290b29;
         .card__custom__title{
@@ -29,37 +26,26 @@
         border : 1px solid  #fff;
     }
 }
-
-
 .card__price__discount {
-
-
     .card__price--final {
-
         font-size: 1.3rem;
         font-weight: 700;
     }
-
     .card__price--original {
-
         font-size: 1rem;
         font-weight: 300;
         text-decoration: line-through;
         margin-right: 4px;
     }
 }
-
 .card__price {
-
     .card__price--final {
         font-size: 1rem;
         font-weight: 400;
         margin-right: 4px;
     }
 }
-
 .card__custom__price {
-
     height: 3rem;
     display: flex;
     justify-content: center;

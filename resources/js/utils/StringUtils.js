@@ -6,7 +6,6 @@ class StringUtils {
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         });
     }
-
     static convertDate(dateTypeTimestamp) {
         const months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
         const date = new Date(dateTypeTimestamp);
@@ -15,7 +14,6 @@ class StringUtils {
         const year = date.getFullYear();
         return `${month} ${day}, ${year}`;
     }
-
 }
 
 export default StringUtils;

@@ -6,11 +6,9 @@ class CartUtils {
         }
         return [];
     }
-
     static getNoOfItems() {
         return CartUtils.getCart().length || 0;
     }
-
     static checkBookInCart(bookId) {
         const cart = CartUtils.getCart();
         return cart.some(book => book.id === bookId);

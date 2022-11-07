@@ -22,7 +22,6 @@ function SignInModal(props){
         resolver: yupResolver(schema)
     });
     const onSubmit = (data) => {
-        // Sign in sync await
         const signIn = async () => {
             try {
                 const response = await userApi.signIn(data);
@@ -50,7 +49,7 @@ function SignInModal(props){
         }
         signIn();
     }
-    
+
     return (
         <React.Fragment>
             <span onClick={()=>setIsShow(true)}>{props.text}</span>

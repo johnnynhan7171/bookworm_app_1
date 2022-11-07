@@ -8,10 +8,8 @@ import 'react-multi-carousel/lib/styles.css';
 import "./style.scss";
 
 function OnSale(){
-
     const [books, setBooks] = useState([]);
     const navigate = useNavigate();
-
     const responsive = {
 		superLargeDesktop: {
 			breakpoint: { max: 4000, min: 3000 },

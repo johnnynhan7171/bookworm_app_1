@@ -4,11 +4,10 @@ import Products from "./Products";
 import "./style.scss";
 
 function ListProducts({ params, setPage, setSortBy, setNoItems, paginate, setPaginate }) {
-
     return (
         <div className='shop__listproduct'>
             <SortingBar params={params}
-                        setSortBy={setSortBy} 
+                        setSortBy={setSortBy}
                         setNoItems={setNoItems}
                         paginate={paginate}/>
             <Products params={params} setPage={setPage} paginate={paginate} setPaginate={setPaginate}/>

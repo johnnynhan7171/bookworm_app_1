@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Card } from "react-bootstrap";
-import { CartUtils } from "../../../../utils";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../../../reducers/cart";
 import { AlertCustom } from "../../../../components";
