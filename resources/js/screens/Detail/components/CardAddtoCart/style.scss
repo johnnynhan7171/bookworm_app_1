@@ -4,24 +4,20 @@
     color: #000;
     margin-left: 5px;
 }
-
 .bookworm__detail__card__price__bookprice{
     // Text decoration line-through and color gray
     text-decoration: line-through;
     color: #999;
 }
-
 .bookworm__detail__card__price{
     display: flex;
     align-items: center;
 }
-
 .bookworm__detail__card__body__quantity{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-
 .bookworm__detail__card__body__quantity{
     width: 100%;
     display: flex;
@@ -38,10 +34,8 @@
         width: 42px;
         border: none;
         color: #290b29;
-
     }
 }
-
 .bookworm__detail__card__body__addtocart {
     margin-top: 30px;
     button {
@@ -53,7 +47,6 @@
         font-size: 1.2rem;
         font-weight: 600;
         cursor: pointer;
-
         &:hover {
             background-color: #999;
         }

@@ -18,7 +18,6 @@ function CartTotal(){
         });
         setTotal(total);
     }, [cart]);
-    
     const handlePlaceOrder = () => {
         if(!localStorage.getItem('isLogin')){
             setIsShow(true);
@@ -49,7 +48,7 @@ function CartTotal(){
                 }
             }
         }
-        
+
     }
 
     return (

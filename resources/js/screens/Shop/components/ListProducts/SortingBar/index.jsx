@@ -9,18 +9,15 @@ function SortingBar({ params, setSortBy, setNoItems, paginate }) {
         "price-asc": 'price: low to high',
         "price-desc": 'price: high to low',
     };
-
     const showTypes = {
         "5": '5',
         "10": '10',
         "15": '15',
         "20": '20',
     };
-
     const handleSort = (value) => {
         setSortBy(value);
     }
-
     const handleShow = (value) => {
         setNoItems(value);
     }

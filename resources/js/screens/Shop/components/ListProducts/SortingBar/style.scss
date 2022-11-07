@@ -2,9 +2,7 @@
     // Center horizontally
     margin: 0 auto;
 }
-
 .shop__listproduct__sorting{
-
     display: flex !important;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -13,11 +11,9 @@
 .shop__listproduct__sorting__dropdown{
     display: flex !important;
     justify-content: flex-end;
-
     .shop__listproduct__sorting__dropdown__sorting{
         margin-right: 6px;
     }
-
     button {
         background-color: #290b29;
         color: #fff;
@@ -29,18 +25,15 @@
         cursor: pointer;
         transition: all 0.15s ease-in-out;
         border: 1px solid #000;
-
         &:hover {
             background-color: #fff;
             color: #290b29;
             border: 1px solid #290b29;
         }
-
         &::backdrop {
             background-color: #290b29;
         }
     }
-
     a {
         &:hover {
             color: #fff;

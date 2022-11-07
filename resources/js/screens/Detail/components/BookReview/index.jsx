@@ -5,9 +5,9 @@ import { ReviewForm } from "../../components";
 import { reviewApi } from "../../../../services";
 import { StringUtils } from "../../../../utils";
 import "./style.scss";
+
 function BookReview({ id }) {
     const [reviews, setReviews] = useState([]);
-
     const [filterParams, setFilterParams] = useState({
         page: 1,
         no_items: 5,
@@ -15,7 +15,6 @@ function BookReview({ id }) {
         book_id: id,
         rating: null
     });
-
     const [rating, setRating] = useState({
         avg: 0,
         total: 0,
@@ -25,7 +24,6 @@ function BookReview({ id }) {
         two: 0,
         one: 0
     });
-
     const [paginate, setPaginate] = useState({
         total: 0,
         current_page: 1,
@@ -33,51 +31,43 @@ function BookReview({ id }) {
         from: 1,
         to: 1
     });
-
     const sortTypes = {
         "newest": 'date: newest to oldest',
         "oldest": 'date: oldest to newest',
     };
-
     const showTypes = {
         "5": '5',
         "10": '10',
         "15": '15',
         "20": '20',
     };
-
     const handlePageClick = (data) => {
         setFilterParams({
             ...filterParams,
             page: data.selected + 1
         });
     };
-
     const handleSortChange = (sortBy) => {
         setFilterParams({
             ...filterParams,
             sort_by: sortBy
         });
     };
-
     const handleShowChange = (noItems) => {
         setFilterParams({
             ...filterParams,
             no_items: noItems
         });
     };
-
     const handleRatingChange = (rating) => {
         setFilterParams({
             ...filterParams,
             rating: rating
         });
     };
-
     useEffect(() => {
         const fetchRating = async () => {
             try {
-
                 const response = await reviewApi.getRating({book_id: id});
                 let countStarts = response.count_stars.sort((a, b) => parseInt(b.rating_start) - parseInt(a.rating_start));
                 let total = countStarts.reduce((sum, item) => {

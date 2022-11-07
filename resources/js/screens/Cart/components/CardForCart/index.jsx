@@ -8,7 +8,6 @@ import "./style.scss"
 function CardForCart(){
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cartReducer.cart);
-
     const handleAddQuantity = (book) => {
         dispatch(addQuantity(book.id));
     }
@@ -73,7 +72,7 @@ function CardForCart(){
                                                     )
                                                 }
                                             </Col>
-                                            <Col xs={12} md={4} lg={4}> 
+                                            <Col xs={12} md={4} lg={4}>
                                                 <div className="bookworm__cart__quantity">
                                                     <button className="bookworm__cart__quantity__button" onClick={() => handleRemoveQuantity(item.book)}>-</button>
                                                     <h6 className="bookworm__cart__quantity__number">{item.quantity}</h6>

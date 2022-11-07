@@ -13,7 +13,6 @@ const axiosClient = axios.create({
     },
 });
 
-// Interceptors
 axiosClient.interceptors.request.use(async (config) => {
     return config;
 });

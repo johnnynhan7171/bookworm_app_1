@@ -36,7 +36,6 @@ function Shop(){
             page: 1
         })
     }, [category]);
-
     useEffect(() => {
         setParams({
             ...params,
@@ -45,7 +44,6 @@ function Shop(){
             page: 1
         })
     }, [author]);
-
     useEffect(() => {
         setParams({
             ...params,
@@ -53,7 +51,6 @@ function Shop(){
             page: 1
         })
     }, [rating]);
-
     useEffect(() => {
         setParams({
             ...params,
@@ -61,7 +58,6 @@ function Shop(){
             page: 1
         })
     }, [sortBy]);
-
     useEffect(() => {
         setParams({
             ...params,
@@ -69,14 +65,12 @@ function Shop(){
             page: 1
         })
     }, [noItems]);
-
     useEffect(() => {
         setParams({
             ...params,
             page: page
         })
     }, [page]);
-
     return (
         <Container className='bookworm__shop'>
             <TitleShop params={params}/>

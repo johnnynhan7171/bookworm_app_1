@@ -1,13 +1,10 @@
 .bookworm__cart_total{
-    // Align center
     text-align: center;
-
     h1 {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1.2rem;
     }
-
     button {
         background-color: #290b29;
         color: #fff;
@@ -19,7 +16,6 @@
         cursor: pointer;
         transition: all 0.15s ease-in-out;
         border: 1px solid #000;
-
         &:hover {
             background-color: #fff;
             color: #290b29;

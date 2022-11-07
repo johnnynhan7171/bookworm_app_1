@@ -28,7 +28,6 @@ const cartSlice = createSlice({
                     state.alert.show = true;
                     state.alert.message = 'You can not add more than ' + state.limit + ' books';
                 }
-
             } else {
                 carts.push(book);
                 localStorage.setItem('cart', JSON.stringify(carts));

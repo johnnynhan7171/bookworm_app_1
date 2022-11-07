@@ -4,21 +4,18 @@ import { Card } from "react-bootstrap";
 import { reviewApi } from "../../../../services";
 import { AlertCustom } from "../../../../components";
 import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from "yup"; 
+import * as yup from "yup";
 import "./style.scss";
 
 function ReviewForm({ id }) {
-
     const schema = yup.object().shape({
         title: yup.string().required(),
         detail: yup.string().required(),
         rating: yup.number().required(),
     }).required();
-
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     });
-
     const [showAlert, setShowAlert] = useState(false);
     const onSubmit = (data) => {
         const review = {
