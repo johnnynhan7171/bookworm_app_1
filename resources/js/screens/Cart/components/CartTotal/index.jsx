@@ -48,7 +48,6 @@ function CartTotal(){
                 }
             }
         }
-
     }
 
     return (

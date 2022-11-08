@@ -48,7 +48,6 @@ function FilterBar({ params, setCategory, setAuthor, setRating }) {
     }, []);
 
     const handleFilter = (e, menuItem, menuName) => {
-        // Get classname from e, if active set null
         const className = e.target.className;
         const activated = className.includes('active');
 
@@ -76,7 +75,7 @@ function FilterBar({ params, setCategory, setAuthor, setRating }) {
                                 </Accordion.Header>
                                 {
                                     filterMenu.menuItems.map((menuItem, index) => (
-                                        <Accordion.Body key={index} 
+                                        <Accordion.Body key={index}
                                             className={
                                                 filterMenu.menuName === 'Rating Review' && menuItem == params.rating ? (
                                                     'shop__filtermenu__body--active'

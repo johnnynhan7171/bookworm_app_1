@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { CartUtils } from "../../utils";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { TitleCustom } from "../../components";
 import { useSelector, useDispatch } from "react-redux";
 

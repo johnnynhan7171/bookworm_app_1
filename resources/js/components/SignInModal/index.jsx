@@ -12,12 +12,10 @@ function SignInModal(props){
     useEffect(() => {
         setIsShow(show);
     }, [show]);
-
     const schema = yup.object().shape({
         email: yup.string().email().required(),
         password: yup.string().required(),
     }).required();
-
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     });
@@ -69,6 +67,10 @@ function SignInModal(props){
                             <input {...register('password')} type="password" className="form-control"/>
                             <small className="form-text text-danger">{errors.password?.message}</small>
                         </div>
+                        <label>
+                            <input type="checkbox" />
+                            Remember Me
+                        </label>
                         <input onClick={handleSubmit(onSubmit)} type="submit" className="bookworm__signin_button w-100" value="Sign In" />
                     </form>
                 </Modal.Body>

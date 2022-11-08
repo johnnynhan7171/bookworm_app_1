@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Card, Row, Col, Container } from "react-bootstrap";
+import React from "react";
+import { Card, Row, Col } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart, removeFromCart, addQuantity, minusQuantity } from "../../../../reducers/cart";
+import { addQuantity, minusQuantity } from "../../../../reducers/cart";
 import IMAGE from "../../../../../assets";
-import { AlertCustom } from "../../../../components";
 import "./style.scss"
 function CardForCart(){
     const dispatch = useDispatch();
