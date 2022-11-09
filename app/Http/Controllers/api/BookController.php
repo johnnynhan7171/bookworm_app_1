@@ -23,11 +23,10 @@ class BookController extends Controller
         $this->bookRepository = $bookRepository;
     }
 
-    //get list book 
     public function getListBooks()
     {
         $books = $this->bookRepository->getAll();
-        
+
         return response()->json($books);
     }
 
@@ -38,13 +37,11 @@ class BookController extends Controller
         return response()->json($book);
     }
     public function getOnSale(){
-        //get list book on sale
         $books = $this->bookRepository->getOnSale();
         return response()->json(new BookCollection($books), 200);
     }
 
     public function getPopular(){
-        //get list book popular
         $books = $this->bookRepository->getPopular();
         return response()->json(new BookCollection($books), 200);
     }
@@ -54,7 +51,6 @@ class BookController extends Controller
         return response()->json(new BookCollection($books), 200);
     }
     public function getFeatured(){
-        // Featured books is popular books and recommended books
         $books = [
             'popular' => new BookCollection($this->bookRepository->getPopular()),
             'recommended' => new BookCollection($this->bookRepository->getRecommended())

@@ -16,7 +16,7 @@ class AuthController extends Controller
         $this->authRepository = $authRepository;
     }
     public function test(){
-        return "Duc";
+        return "Nhan";
     }
     public function signup(AuthRequest $request)
     {

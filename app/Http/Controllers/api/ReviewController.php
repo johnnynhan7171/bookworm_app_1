@@ -23,7 +23,7 @@ class ReviewController extends Controller
     public function index(FilterReviewsRequest $request)
 
     {
-       
+
         $validateStatus = $this -> productRepository -> validateIDBook($request->id);
         if($validateStatus){
             $queryParamsArr = $this -> productRepository -> filterQueryParamsForLoadReviews($request);
